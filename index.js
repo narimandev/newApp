@@ -54,7 +54,6 @@ class Scene extends React.Component {
         <InfoButton
           key={i}
           style={styles.button}
-          source={asset('123.jpg')}
           text={SCENES[i]}
           onClick={() => { this.clickHandler(SCENES[i])}}
         />
@@ -63,9 +62,6 @@ class Scene extends React.Component {
 
     return(
       <View style={styles.panel}>
-        <Text>
-            Сhoose a Scene
-          </Text>
         <View>
           {selection}
         </View>
