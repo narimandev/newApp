@@ -14,7 +14,7 @@ export default class Cars extends React.Component {
   Video360 = VideoModule.createPlayer('Video360');
 
   componentDidMount() {
-    Environment.setBackgroundImage(asset('123.jpg'));
+    Environment.setBackgroundImage(asset('1.jpg'));
   }
 
   clearMedia() {

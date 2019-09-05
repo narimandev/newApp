@@ -9,11 +9,10 @@ import {
   View,
 } from 'react-360';
 import InfoButton from './components/InfoButton';
-import Food from './components/Food';
+import Landscapes from './components/Landscapes';
 import Cars from './components/Cars';
-import Occupation from './components/Occupation';
 
-const SCENES = ['Food', 'Cars', 'Occupation'];
+const SCENES = ['Landscapes', 'Cars'];
 
 class Scene extends React.Component {
   state = {
@@ -41,12 +40,10 @@ class Scene extends React.Component {
     let selection;
     const sceneButtons = [];
 
-    if (scene === 'Food') {
-      selection = <Food />;
+    if (scene === 'Landscapes') {
+      selection = <Landscapes />;
     } else if (scene === 'Cars') {
       selection = <Cars />;
-    } else if (scene === 'Occupation') {
-      selection = <Occupation />;
     }
 
     for (let i in SCENES) {
